@@ -1,0 +1,34 @@
+server:
+    port: 8999
+spring:
+  application:
+    name: iotServer
+  profiles:
+    active: dev
+  cloud:
+    config:
+      profile: prod
+      label: master
+      discovery:
+        enabled: true
+        serviceId: configserver
+      username: user
+      password: g1ng2G0!17!77-77
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://user:g1ng2G0!17~777@registryserver:8761/eureka
+
+logging:
+  file: gingerIotlog.txt
+  path: /root/logs
+  level:
+    root: info
+    cn.gingergo: debug
+
+
+
