@@ -21,7 +21,7 @@
         <java.version>1.8</java.version>
         <project.revision>2.0.0</project.revision>
         <assertj.version>3.6.2</assertj.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <commons-lang.version>3.7</commons-lang.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
